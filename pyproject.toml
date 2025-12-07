@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "Retail-demand-forecasting"
+version = "0.1.0"
+description = "Time-series demand forecasting using LSTM, GRU, Seq2Seq and Prophet"
+authors = ["Roshan"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+numpy = "^1.26"
+scipy = "^1.11"
+pandas = "^2.2"
+matplotlib = "^3.8"
+seaborn = "^0.13"
+
+# Machine learning
+scikit-learn = "^1.5"
+
+# Deep learning: TF 2.15 works on Windows + Python 3.10/3.11
+# tensorflow = "^2.15"
+# keras = "^3.0"
+
+# Forecasting
+prophet = "^1.2"    # modern replacement for fbprophet
+
+# Tools & utilities
+graphviz = "^0.20"
+pydotplus = "^2.0.2"
+
+# Jupyter environment
+# jupyter = "^1.0"
+# jupyterlab = "^4.2"
+ipykernel = "^6.29"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+black = "^24.0"
+flake8 = "^7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
